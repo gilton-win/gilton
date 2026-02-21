@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tokenomics</title>
+    <title>Tokenomics - GILTON</title>
     <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
@@ -12,52 +12,186 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Navigation -->
     <div class="header">
-        <a href="/"><i class="fas fa-home icon"></i></a>
-        <a href="#"><i class="fab fa-discord icon"></i></a>
-        <a href="https://x.com/gilton_win"><i class="fab fa-twitter icon"></i></a>
+        <a href="/" class="header-logo"><img src="/img/box.png" alt="GILTON Logo" class="logo-img"></a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/tokenomics/">Tokenomics</a></li>
+            <li><a href="/terms/">Terms</a></li>
+        </ul>
     </div>
 
+    <!-- Main Content -->
     <div class="content">
         <div class="page-wrapper">
-            <h1 class="page-title">Plan Tokenomics of GILTON</h1>
+            <div class="breadcrumb">
+                <a href="/"><i class="fas fa-home"></i> Home</a>
+                <span>/</span>
+                <span>Tokenomics</span>
+            </div>
 
+            <h1 class="page-title">GILTON Tokenomics</h1>
+            <p class="page-subtitle">Transparent token distribution and allocation</p>
+
+            <!-- Token Info Section -->
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="card-icon"><i class="fas fa-coins"></i></div>
+                    <h3>Token Name</h3>
+                    <p class="card-value">GILTON</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon"><i class="fas fa-tag"></i></div>
+                    <h3>Symbol</h3>
+                    <p class="card-value">GTN</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Total Supply</h3>
+                    <p class="card-value">10M</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon"><i class="fas fa-cube"></i></div>
+                    <h3>Blockchain</h3>
+                    <p class="card-value">Ethereum</p>
+                </div>
+            </div>
+
+            <!-- Distribution Section -->
             <section class="page-section">
-                <h2>1. Information</h2>
-                <p>
-                    - Name = GILTON
-                </p>
-                <p>
-                    - Symbol = GTN
-                </p>
-                <p>
-                    - Total Supply = 10 Millions
-                </p>
+                <h2><i class="fas fa-pie-chart"></i> Token Distribution</h2>
+                <div class="distribution-table">
+                    <div class="distribution-row">
+                        <div class="dist-label">Liquidity</div>
+                        <div class="dist-bar">
+                            <div class="dist-fill" style="width: 10%; background: #1abc9c;"></div>
+                        </div>
+                        <div class="dist-value">10% (1M)</div>
+                    </div>
+                    <div class="distribution-row">
+                        <div class="dist-label">Dev Lock (1 Year)</div>
+                        <div class="dist-bar">
+                            <div class="dist-fill" style="width: 10%; background: #e74c3c;"></div>
+                        </div>
+                        <div class="dist-value">10% (1M)</div>
+                    </div>
+                    <div class="distribution-row">
+                        <div class="dist-label">Community Event</div>
+                        <div class="dist-bar">
+                            <div class="dist-fill" style="width: 80%; background: #3498db;"></div>
+                        </div>
+                        <div class="dist-value">80% (8M)</div>
+                    </div>
+                </div>
             </section>
 
+            <!-- Information Section -->
             <section class="page-section">
-                <h2>2. Distribution</h2>
-                <p>
-                    - 10% Liquidity
-                </p>
-                <p>
-                    - 10% Token Lock Dev (1 Year)
-                </p>
-                <p>
-                    - 80% Token Lock Community Event
-                </p>
+                <h2><i class="fas fa-info-circle"></i> Token Information</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h4>What is GILTON?</h4>
+                        <p>
+                            GILTON token is a community-driven cryptocurrency project built on innovative blockchain technology. 
+                            It represents a commitment to transparency, sustainability, and community-first values.
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Liquidity Provision</h4>
+                        <p>
+                            10% of the total supply is allocated to establish sufficient liquidity in decentralized exchanges, 
+                            ensuring smooth trading and market stability.
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Developer Lock</h4>
+                        <p>
+                            10% is locked for 1 year to demonstrate long-term commitment and prevent early exit. 
+                            This shows confidence in the project's future.
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <h4>Community Rewards</h4>
+                        <p>
+                            80% of token are reserved for community events, rewards, and engagement initiatives. 
+                            This ensures the community benefits most from the project's success.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="page-section">
+                <h2><i class="fas fa-star"></i> Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4>Secure</h4>
+                        <p>Built on proven blockchain technology</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-users"></i></div>
+                        <h4>Community-Driven</h4>
+                        <p>Decisions made by the community</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-eye"></i></div>
+                        <h4>Transparent</h4>
+                        <p>Full transparency in all operations</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                        <h4>Innovative</h4>
+                        <p>Latest technology and features</p>
+                    </div>
+                </div>
             </section>
         </div>
     </div>
 
-    <div class="footer">
-        <p><a href="/tokenomics" id="linkline" class="link-3">Tokenomics</a></p>
-        <p><a href="/terms" id="linkline" class="link-3">Terms</a></p>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About GILTON</h3>
+                <p>GILTON is a community-driven token project focused on innovation, transparency, and sustainable growth.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="/tokenomics/"><i class="fas fa-chart-pie"></i> Tokenomics</a></li>
+                    <li><a href="/terms/"><i class="fas fa-file-alt"></i> Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p style="margin-bottom: 15px; font-size: 0.9rem; color: #a0a0a0;">Join our community</p>
+                <div class="footer-social">
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="Twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="Discord" aria-label="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="Telegram" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024-2026 GILTON. All rights reserved. | <a href="/terms/">Terms & Conditions</a></p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
