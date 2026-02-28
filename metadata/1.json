@@ -2,4 +2,14 @@
     "name": "GiltonNFT",
     "description": "GiltonNFT",
     "image": "https://gilton.win/img/box.png"
+    "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Dark Gradient"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    }
+  ]
 }
