@@ -1,0 +1,11 @@
+{
+    "name": "GILTON NFT CLP",
+    "description": "GILTON NFT Community Liquidity Pool",
+    "image": "https://",
+    "attributes": [
+    {
+      "trait_type": "Utility",
+      "value": "Liquidity Access"
+    }
+  ]
+}
