@@ -1,7 +1,7 @@
 {
     "name": "GILTON NFT CLP S1",
     "description": "GILTON NFT Community Liquidity Pool",
-    "image": "/metadata/clp-s1/clps1.png",
+    "image": "https://gilton.win/metadata/clp-s1/clps1.png",
     "attributes": [
     {
       "trait_type": "Utility",
