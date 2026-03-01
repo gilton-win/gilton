@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin GILTON NFT CLP</title>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header>
+        <div class="header-container">
+            <a href="/" class="header-logo">
+                <img src="/logo/logo.png" alt="GILTON Logo" class="logo-img">
+            </a>
+            <div class="wallet">
+                <span id="network"></span>
+                <span id="account"></span>
+                <button id="connectBtn">Connect Wallet Metamask</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Owner Controls -->
+        <div class="info">
+            <h1>Owner Controls</h1>
+            <p>Contract Balance: <span id="contractBalance">0</span> ETH</p>
+            <p>Current Price Feed: <span id="currentPriceFeed">0x...</span></p> <!-- BARU -->
+            <button id="withdrawBtn" disabled>Withdraw</button>
+            <div style="margin-top: 1rem;">
+                <label>Base URI:</label>
+                <input type="text" id="baseURIInput" placeholder="ipfs://... or https://...">
+                <button id="updateBaseURIBtn" disabled>Update</button>
+            </div>
+            <div style="margin-top: 1rem;">
+                <label>Transfer Ownership to:</label>
+                <input type="text" id="newOwnerInput" placeholder="0x...">
+                <button id="transferOwnershipBtn" disabled>Transfer</button>
+            </div>
+            <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                <button id="pauseBtn" disabled>Pause Minting</button>
+                <button id="unpauseBtn" disabled>Unpause Minting</button>
+            </div>
+            <!-- BARU: Price Feed Update -->
+            <div style="margin-top: 1rem;">
+                <label>New Price Feed Address:</label>
+                <input type="text" id="priceFeedInput" placeholder="0x...">
+                <button id="updatePriceFeedBtn" disabled>Update Price Feed</button>
+            </div>
+        </div>
+
+        <!-- History Tables -->
+        <div class="history">
+            <h2>Mint History</h2>
+            <table id="mintTable">
+                <thead>
+                    <tr>
+                        <th>Minter</th>
+                        <th>Token ID</th>
+                        <th>Price (ETH)</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <h2>Withdraw History</h2>
+            <table id="withdrawTable">
+                <thead>
+                    <tr>
+                        <th>Amount (ETH)</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Connect Section -->
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p style="margin-bottom: 15px; font-size: 0.9rem; color: #a0a0a0;">Join our community</p>
+                <div class="footer-social">
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="Twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="Discord" aria-label="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="Telegram" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>
+                &copy; 2024-2026 GILTON. All rights reserved. |
+                <a href="/terms/">Terms & Conditions</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
