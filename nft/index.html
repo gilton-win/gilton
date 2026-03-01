@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GILTON NFT CLP S1</title>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Logo -->
+    <header>
+        <div class="header-container">
+            <a href="/" class="header-logo">
+                <img src="/logo/logo.png" alt="GILTON Logo" class="logo-img">
+            </a>
+            <div class="wallet">
+                <span id="network"></span>
+                <span id="account"></span>
+                <button id="connectBtn">Connect Wallet Metamask</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section: NFT Preview & Description -->
+        <section class="hero">
+            <div class="hero-image">
+                <img src="/metadata/clp/clp.png" alt="GILTON NFT Preview" class="nft-preview">
+            </div>
+            <div class="hero-text">
+                <h1>GILTON NFT CLP S1</h1>
+                <p class="description">
+                    GILTON NFT Community Liquidity Pool – Mint exclusive NFT to gain access to Community Liquidity Pool. 
+                    Each NFT grants special privileges.
+                </p>
+                <div class="hero-stats">
+                    <span>🔹 10,000 Total Supply</span>
+                    <span>🔹 No limit per wallet</span>
+                    <span>🔹 Price: $10</span>
+                    <span>🔹 Blockchain: Sepolia</span>
+                    <span>🔹 Mainnet Coming Soon</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Minting Info Section -->
+        <div class="info">
+            <h2>Mint NFT</h2>
+            <p>Total Minted: <span id="totalMinted">0</span> / 10000</p>
+            <p>Remaining: <span id="remaining">10000</span></p>
+            <p>Price: $10 (≈ <span id="ethPrice">0</span> ETH)</p>
+            <p>Your NFT: <span id="userBalance">0</span></p>
+            <p>Status: <span id="pauseStatus" style="color: #55ff55;">Active</span></p>
+            <button id="mintBtn" disabled>Mint Now</button>
+        </div>
+
+        <!-- Your NFT Section (list of owned token ID) -->
+        <div class="nft-list">
+            <h2>Your NFT ID</h2>
+            <ul id="nftList">
+                <li>No NFT yet</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Connect Section -->
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <p style="margin-bottom: 15px; font-size: 0.9rem; color: #a0a0a0;">Join our community</p>
+                <div class="footer-social">
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="Twitter" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="Discord" aria-label="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="Telegram" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>
+                &copy; 2024-2026 GILTON. All rights reserved. | 
+                <a href="/terms/">Terms & Conditions</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
